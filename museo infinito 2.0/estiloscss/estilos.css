@@ -1,0 +1,509 @@
+/* Archivo styles.css */
+
+/* Estilo para la sección de inicio con imagen de fondo */
+#inicio {
+    background-image: url("/images/imageninico2.jpg");  /* Ruta a la imagen de fondo */
+    background-size: cover;                          /* Hace que la imagen cubra toda la sección */
+    background-position: center;                     /* Centra la imagen de fondo */
+    background-attachment: fixed;                    /* Efecto parallax: imagen fija durante el desplazamiento */
+    color: white;                                    /* Color de texto blanco para que sea legible sobre la imagen */
+    padding: 100px 0;                                /* Espaciado arriba y abajo de la sección */
+}
+
+/* Estilo para los textos dentro de la sección */
+#inicio .container {
+    z-index: 1;
+}
+
+/* Opcional: Estilo para la descripción dentro de la sección */
+#inicio .descripcion p {
+    font-size: 1.25rem;  /* Tamaño de fuente más grande para la descripción */
+    line-height: 1.6;
+    text-shadow: 5px 5px 10px rgb(rgb(5, 5, 5), rgb(2, 2, 2), rgb(0, 0, 10));
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del elemento padre, de modo que no tenga el color predeterminado del enlace */
+}
+
+
+
+
+/* Estilo para la sección de novedades */
+.novedades {
+    background-color: #f8f9fa;  /* Fondo claro para la sección */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Título de la sección de novedades */
+.novedades h2 {
+    font-size: 2.5rem;  /* Tamaño del título */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Descripción general de la sección */
+.novedades .descripcion p {
+    font-size: 1.1rem;  /* Tamaño de la descripción */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilo para los artículos dentro de la sección de novedades */
+.article-size {
+    height: 300px;  /* Altura fija para los artículos */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Estilo para las imágenes dentro de los artículos */
+.image-size {
+    width: 100%;
+    height: 200px;  /* Altura uniforme para las imágenes */
+    object-fit: cover;  /* Asegura que la imagen cubra el área sin distorsión */
+    border-radius: 5px;
+}
+
+/* Estilo para los títulos dentro de los artículos */
+.article-size h3 {
+    font-size: 1.25rem;  /* Ajuste de tamaño para los títulos */
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+
+/* Ajuste de las columnas para una disposición consistente */
+.row-cols-1, .row-cols-md-2, .row-cols-lg-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.container {
+    max-width: 1400px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.contact-intro {
+    background-image: url("https://png.pngtree.com/background/20230520/original/pngtree-the-dark-room-with-the-round-object-is-full-of-geometric-picture-image_2670659.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff; /* Asegura que el texto sea blanco para contraste con la imagen */
+}
+
+#logo {
+    border-radius: 20px;
+}
+
+/* Imágenes de fondo para las secciones */
+#sobre-nosotros {
+    background-image: url('http://arquepoetica.azc.uam.mx/blog/wp-content/uploads/2014/06/016_museos1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#mision {
+    background-image: url('https://www.museoyaganusi.gob.cl/sites/www.museoyaganusi.gob.cl/files/2021-06/2012_Dibam_MAMG_9283.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#vision {
+    background-image: url('https://mymodernmet.com/wp/wp-content/uploads/2020/11/the-lume-van-gogh-exhibition-13.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#equipo {
+    background-image: url('https://blog.tunubi.com/wp-content/uploads/2017/03/blog-201703A.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Para que el texto sea legible sobre las imágenes de fondo */
+#sobre-nosotros,
+#mision,
+#vision,
+#equipo {
+    padding: 60px 0;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.6);
+}
+
+
+#valores-carousel {
+    background-color: #f8f9fa;
+}
+#carouselValores .carousel-inner .carousel-item img {
+    object-fit: cover; /* Asegura que todas las imágenes se ajusten al mismo tamaño */
+    height: 600px; /* Establece una altura fija para todas las imágenes */
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px
+}
+#valores-carousel .carousel-item {
+    text-align: center;
+}
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item .carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* Archivo: styles.css */
+
+/* Estilos para el header con imagen de fondo */
+.title-exhibition {
+    background-image: url('https://thumbs.dreamstime.com/z/catal-hoyuk-located-near-konya-turkey-was-neolithic-settlement-founded-over-years-ago-inhabited-continuously-millennium-299234452.jpg?w=992');
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 252, 252);
+    text-align: center;
+    padding: 100px 0; /* Ajusta el padding según el tamaño que desees */
+    position: relative;
+}
+
+.title-exhibition h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para el texto */
+    color: rgb(0, 0, 0);
+}
+
+/* Estilo para el subtítulo */
+.title-exhibition p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra para el texto */
+    color: rgb(0, 0, 0);
+}
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+    header p {
+        font-size: 1.25rem; /* Reduce el tamaño del subtítulo en pantallas pequeñas */
+    }
+}
+
+
+.header {
+    position: relative;
+  }
+  
+  .header-image {
+    background: url('https://wallpaperbat.com/img/360235-chichen-itza-hd-wallpaper.jpg') no-repeat center center/cover;
+    height: 300px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-image h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .collection-item {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Altura fija para que todos los contenedores tengan el mismo tamaño */
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor */
+  }
+  
+  .image-container p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  /* Diseño Responsive */
+  @media (max-width: 1200px) {
+    .collections {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .collections {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .header-image h1 {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .collections {
+      grid-template-columns: 1fr;
+    }
+  
+    .header-image h1 {
+      font-size: 24px;
+    }
+  }
+
+
+
+.virtual-exhibitions {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.virtual-exhibitions h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.scroll-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto; /* Permite el desplazamiento horizontal */
+  scroll-snap-type: x mandatory;
+  padding-bottom: 15px;
+}
+
+
+.scroll-container::-webkit-scrollbar {
+    display: -webkit-inline-box; /* Oculta la barra de scroll */
+  }
+  
+.exhibition-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 220px; /* Más alto que ancho */
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative; /* Para posicionar el texto encima */
+}
+
+.exhibition-item img {
+  width: 100%;
+  height: 330px; /* Más alto que ancho */
+  object-fit: cover; /* Mantiene la proporción */
+}
+
+.exhibition-item p {
+  position: absolute;
+  bottom: 10px; /* Coloca el texto cerca de la parte inferior */
+  left: 10px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agrega sombra para mejor visibilidad */
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+  .virtual-exhibitions h2 {
+    font-size: 20px;
+  }
+
+  .exhibition-item {
+    width: 180px; /* Reduce el tamaño en pantallas medianas */
+  }
+
+  .exhibition-item img {
+    height: 270px; /* Ajusta la altura */
+  }
+}
+
+@media (max-width: 480px) {
+  .virtual-exhibitions h2 {
+    font-size: 18px;
+  }
+
+  .exhibition-item {
+    width: 150px; /* Reduce aún más en móviles */
+  }
+
+  .exhibition-item img {
+    height: 230px; /* Ajusta la altura */
+  }
+}
+
+
+/* Fondo para la sección #buscador */
+#buscador {
+    background-image: url('https://www.mexicodesconocido.com.mx/assets/images/destinos/guanajuato/atractivos/6283-GEMD-Guanajuato-Guanajuato_Capital-Museo_de_las_Momias-GP-Hi.jpg'); /* Reemplaza con la URL de tu imagen */
+    background-size: cover; /* Cubre toda la sección */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: white; /* Asegura que el texto sea blanco para resaltar sobre el fondo */
+}
+
+#buscador .container {
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo semi-transparente para mejorar la legibilidad del texto */
+    padding: 30px; /* Ajusta el espaciado interno */
+    border-radius: 10px; /* Bordes redondeados para el contenedor */
+}
+
+#buscador h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(255, 252, 252); /* Asegura que el título se vea en blanco */
+    text-shadow: 2px 2px 0px rgb(rgb(0, 0, 0), rgb(12, 12, 12), rgb(0, 0, 0));
+}
+
+#buscador .form-control, #buscador .form-select {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco y semi-transparente para los inputs */
+    color: #333; /* Color del texto de los inputs */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados para los inputs */
+}
+
+#buscador .btn {
+    background-color: #007bff; /* Botón azul */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+}
+
+#buscador .btn:hover {
+    background-color: #0056b3; /* Color más oscuro del botón al hacer hover */
+}
+
+/* Estilo general para la sección */
+#cosas-que-ver {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+#cosas-que-ver h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Contenedor para el scroll horizontal */
+.video-wrapper {
+    display: flex; /* Los videos estarán alineados en una fila */
+    overflow-x: scroll; /* Permite desplazarse horizontalmente */
+    overflow-y: hidden; /* No se muestra la barra de desplazamiento vertical */
+    scroll-snap-type: x mandatory; /* Hace que los videos se alineen correctamente al hacer scroll */
+    gap: 20px; /* Espacio entre los videos */
+    padding-bottom: 20px; /* Asegura que no se corte la última fila */
+    -webkit-overflow-scrolling: touch; /* Hace el scroll más suave en dispositivos móviles */
+}
+
+/* Ocultar la barra de scroll en navegadores modernos */
+.video-wrapper::-webkit-scrollbar {
+    display: -webkit-inline-flex; /* Oculta la barra de scroll */
+}
+
+/* Estilo de los videos */
+.video-item {
+    flex-shrink: 0; /* Impide que los videos se encojan */
+    width: 350px; /* Ancho fijo para los videos */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+.video-item iframe {
+    width: 100%;
+    height: 200px; /* Altura del iframe */
+    border: none;
+    border-radius: 10px;
+}
+
+.video-title {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.video-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .video-item iframe {
+        height: 180px; /* Ajusta la altura de los videos en pantallas más pequeñas */
+    }
+
+    .video-wrapper {
+        gap: 15px; /* Ajusta el espacio entre los videos en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .video-item {
+        width: 100%; /* Hace que los videos sean más pequeños en pantallas más pequeñas */
+    }
+}

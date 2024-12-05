@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Museos Internacionales</title>
+    <link rel="stylesheet" href="/estiloscss/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MUSEO INFINITO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/inicio.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projects/explorador/explorador.html">Explore</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projects/contacto/contacto.html">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projects/comunidad/comunidad.html">Comunidad</a>
+              </li>
+
+                
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section id="buscador" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="mb-4">Explora Exhibiciones de Museos Internacionales</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                    <input type="text" id="nombreMuseo" class="form-control" placeholder="Buscar por nombre de museo...">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <select id="pais" class="form-select">
+                        <option value="">Selecciona un país</option>
+                        <option value="USA">Estados Unidos</option>
+                        <option value="Francia">Francia</option>
+                        <option value="Italia">Italia</option>
+                        <option value="España">España</option>
+                        <option value="Reino Unido">Reino Unido</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary w-100">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados de búsqueda -->
+    <section id="resultados" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Resultados de Búsqueda</h2>
+            <div class="row g-4">
+                <!-- Tarjeta 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="http://media.architecturaldigest.com/photos/5900cc370638dd3b70018b33/master/pass/Secrets%20of%20Louvre%201.jpg" class="card-img-top" alt="Museo del Louvre">
+                        <div class="card-body">
+                            <h5 class="card-title">Museo del Louvre</h5>
+                            <p class="card-text">Ubicación: París, Francia</p>
+                            <p>El Louvre es uno de los museos más famosos del mundo, hogar de la Mona Lisa.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://blogimages.musement.com/2021/05/AdobeStock_238539513-scaled.jpeg" class="card-img-top" alt="Metropolitan Museum">
+                        <div class="card-body">
+                            <h5 class="card-title">Metropolitan Museum of Art</h5>
+                            <p class="card-text">Ubicación: Nueva York, EE. UU.</p>
+                            <p>Una vasta colección de arte de todo el mundo en Nueva York.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.musement.com/cover/0002/22/thumb_121543_cover_header.jpeg?&q=60&fit=crop" class="card-img-top" alt="Museo del Prado">
+                        <div class="card-body">
+                            <h5 class="card-title">Museo del Prado</h5>
+                            <p class="card-text">Ubicación: Madrid, España</p>
+                            <p>El Prado es conocido por sus obras maestras europeas.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://umaturistanasnuvens.com/wp-content/uploads/2019/09/O-que-fazer-em-Floren%C3%A7a-Galeria-Uffizi5-2000x1356.jpg" class="card-img-top" alt="Galería Uffizi">
+                        <div class="card-body">
+                            <h5 class="card-title">Galería Uffizi</h5>
+                            <p class="card-text">Ubicación: Florencia, Italia</p>
+                            <p>Famosa por sus colecciones de arte renacentista.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://turismo.eurodicas.com.br/wp-content/uploads/2017/03/museu-britanico.jpg" class="card-img-top" alt="British Museum">
+                        <div class="card-body">
+                            <h5 class="card-title">British Museum</h5>
+                            <p class="card-text">Ubicación: Londres, Reino Unido</p>
+                            <p>Exhibe más de dos millones de años de historia.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://www.partir-a-new-york.com/wp-content/uploads/2016/12/Visiter-MoMA-New-York-Museum-of-Modern-Art-01.jpg" class="card-img-top" alt="MoMA">
+                        <div class="card-body">
+                            <h5 class="card-title">Museo de Arte Moderno (MoMA)</h5>
+                            <p class="card-text">Ubicación: Nueva York, EE. UU.</p>
+                            <p>Un ícono del arte contemporáneo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="http://upload.wikimedia.org/wikipedia/commons/2/22/National_Gallery,_London.jpg" class="card-img-top" alt="National Gallery">
+                        <div class="card-body">
+                            <h5 class="card-title">National Gallery</h5>
+                            <p class="card-text">Ubicación: Londres, Reino Unido</p>
+                            <p>Famosa por su colección de pinturas occidentales.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 8 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://www.japan-guide.com/g18/3054_tokyo_01.jpg" class="card-img-top" alt="Tokyo National Museum">
+                        <div class="card-body">
+                            <h5 class="card-title">Museo Nacional de Tokio</h5>
+                            <p class="card-text">Ubicación: Tokio, Japón</p>
+                            <p>Exhibe arte y antigüedades japonesas.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 9 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://prensacanada.com/wp-content/uploads/2018/05/29-05-2018-Museo-del-Hermitage.jpg" class="card-img-top" alt="Hermitage Museum">
+                        <div class="card-body">
+                            <h5 class="card-title">Museo Hermitage</h5>
+                            <p class="card-text">Ubicación: San Petersburgo, Rusia</p>
+                            <p>Uno de los museos más antiguos y grandes del mundo.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 10 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://etniasdelmundo.com/wp-content/uploads/2020/07/MUSEOS-VATICANOS-1-1.jpg" class="card-img-top" alt="Vatican Museums">
+                        <div class="card-body">
+                            <h5 class="card-title">Museos Vaticanos</h5>
+                            <p class="card-text">Ubicación: Ciudad del Vaticano</p>
+                            <p>Famosos por la Capilla Sixtina y su arte renacentista.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 11 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://media-cdn.sygictraveldata.com/media/800x600/612664395a40232133447d33247d383533333737373839" class="card-img-top" alt="Art Institute of Chicago">
+                        <div class="card-body">
+                            <h5 class="card-title">Instituto de Arte de Chicago</h5>
+                            <p class="card-text">Ubicación: Chicago, EE. UU.</p>
+                            <p>Famoso por su colección de arte impresionista.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 12 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://www.65ymas.com/uploads/s1/26/97/40/museo-de-arte-reina-sofia.jpeg" class="card-img-top" alt="Museo Reina Sofía">
+                        <div class="card-body">
+                            <h5 class="card-title">Museo Reina Sofía</h5>
+                            <p class="card-text">Ubicación: Madrid, España</p>
+                            <p>Hogar del icónico "Guernica" de Picasso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <footer class="bg-dark text-center text-lg-start text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Explora más</h5>
+    
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>Nuestros Museos</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"><i class="fas fa-globe fa-fw fa-sm me-2"></i>Exposiciones Globales</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"><i class="fas fa-user fa-fw fa-sm me-2"></i>Conoce a nuestros curadores</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Información</h5>
+    
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-white"><i class="fas fa-info-circle fa-fw fa-sm me-2"></i>Sobre nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"><i class="fas fa-question-circle fa-fw fa-sm me-2"></i>Preguntas frecuentes</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"><i class="fas fa-shield-alt fa-fw fa-sm me-2"></i>Política de privacidad</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"><i class="fas fa-gavel fa-fw fa-sm me-2"></i>Términos y condiciones</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Conéctate con nosotros</h5>
+    
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="mailto:contacto@museoinfinito.com" class="text-white"><i class="fas fa-at fa-fw fa-sm me-2"></i>Envíanos un correo</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"><i class="fas fa-phone-alt fa-fw fa-sm me-2"></i>+123 456 7890</a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com/museoinfinito" class="text-white"><i class="fab fa-facebook fa-fw fa-sm me-2"></i>Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/museoinfinito" class="text-white"><i class="fab fa-twitter fa-fw fa-sm me-2"></i>Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/museoinfinito" class="text-white"><i class="fab fa-instagram fa-fw fa-sm me-2"></i>Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Únete a nosotros</h5>
+    
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-white"><i class="fas fa-users fa-fw fa-sm me-2"></i>Colabora con nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"><i class="fas fa-cogs fa-fw fa-sm me-2"></i>Voluntariado</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"><i class="fas fa-briefcase fa-fw fa-sm me-2"></i>Ofertas de empleo</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"><i class="fas fa-donate fa-fw fa-sm me-2"></i>Haz una donación</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2021 Museo Infinito. Todos los derechos reservados.
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+</html>
